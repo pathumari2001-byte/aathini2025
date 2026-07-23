@@ -874,3 +874,80 @@ body{
 }
 
 }
+/* =========================
+   Mobile Responsive Fix
+========================= */
+
+@media (max-width:768px){
+
+body{
+    padding-top:120px;
+}
+
+.header{
+    flex-direction:column;
+    padding:15px;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.navbar ul{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.container,
+.building-details .container,
+.about .container,
+.contact-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.building-image,
+.building-info{
+    width:100%;
+}
+
+.building-image img,
+.card img{
+    width:100%;
+    height:auto;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.btn,
+.btn2{
+    display:block;
+    width:100%;
+    margin-top:10px;
+    text-align:center;
+}
+
+iframe{
+    width:100%;
+    height:300px;
+}
+
+input,
+textarea{
+    width:100%;
+}
+}
