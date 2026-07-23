@@ -1,4 +1,3 @@
-
 /* =========================
    Sticky Navbar
 ========================= */
@@ -294,14 +293,23 @@ document.body.classList.toggle("dark-mode");
 
 const menuBtn = document.querySelector(".menu-toggle");
 const navbar = document.querySelector(".navbar");
+const icon = menuBtn.querySelector("i");
 
-if(menuBtn){
+if (menuBtn && navbar) {
 
-menuBtn.addEventListener("click",()=>{
+    menuBtn.addEventListener("click", () => {
 
-navbar.classList.toggle("active");
+        navbar.classList.toggle("active");
 
-});
+        if (navbar.classList.contains("active")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times");
+        } else {
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+        }
+
+    });
 
 }
 

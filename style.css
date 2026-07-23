@@ -66,6 +66,10 @@ body{
     color:#FFD700;
 }
 
+.menu-toggle{
+    display:none;
+}
+
 /* ================= SEARCH ================= */
 
 .header-right{
@@ -878,25 +882,60 @@ body{
    Mobile Responsive Fix
 ========================= */
 
-@media (max-width:768px){
+@media only screen and (max-width:768px){
 
 body{
-    padding-top:120px;
+    overflow-x:hidden;
+    padding-top:90px;
 }
 
 .header{
-    flex-direction:column;
-    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    position:relative;
 }
 
-.logo h2{
-    font-size:28px;
+.logo{
+    text-align:left;
+}
+
+.menu-toggle{
+    display:block;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.navbar{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#0B3D91;
+}
+
+.navbar.active{
+    display:block;
 }
 
 .navbar ul{
     display:flex;
     flex-direction:column;
-    gap:12px;
+    align-items:center;
+    gap:15px;
+    padding:20px 0;
+}
+
+.navbar ul li{
+    margin:0;
+}
+
+.hero{
+    height:auto;
+    padding:60px 20px;
     text-align:center;
 }
 
@@ -906,6 +945,8 @@ body{
 
 .hero p{
     font-size:18px;
+}
+
 }
 
 .container,
@@ -950,7 +991,7 @@ input,
 textarea{
     width:100%;
 }
-}
+
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
