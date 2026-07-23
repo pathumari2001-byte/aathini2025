@@ -951,3 +951,130 @@ textarea{
     width:100%;
 }
 }
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media only screen and (max-width:768px){
+
+body{
+    overflow-x:hidden;
+    padding-top:90px;
+}
+
+.header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.logo span{
+    font-size:14px;
+}
+
+.navbar ul{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    padding:0;
+}
+
+.navbar ul li{
+    margin:0;
+}
+
+.hero{
+    height:auto;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.container,
+.building-details .container,
+.contact-container,
+.about .container{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+.building-image,
+.building-info{
+    width:100%;
+}
+
+.building-image img{
+    width:100%;
+    height:auto;
+    border-radius:12px;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.card{
+    width:100%;
+}
+
+.card img{
+    width:100%;
+    height:auto;
+}
+
+.btn,
+.btn2{
+    display:block;
+    width:100%;
+    margin-top:10px;
+    text-align:center;
+}
+
+.contact form{
+    width:100%;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+}
+
+iframe{
+    width:100%;
+    height:300px;
+}
+
+footer{
+    text-align:center;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+}
